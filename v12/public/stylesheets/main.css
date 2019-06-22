@@ -1,0 +1,26 @@
+nav {
+    margin-bottom: 1rem;
+}
+
+.img-thumbnail img {
+    width: 100%;
+}
+
+.img-thumbnail {
+    padding: 0;
+    margin-bottom: 1rem;
+    box-shadow: 0px 3px 5px rgba(0,0,0,0.1);
+}
+
+.img-thumbnail .caption-full {
+    padding: 12px;
+    
+}
+
+.card {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+#delete-form {
+    display: inline;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>YelpCamp</title>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<link href="/stylesheets/main.css" rel="stylesheet">
+	<script type="text/javascript">
+	// 	var image = document.getElementsByClassName("background");
+	// 	var images = [
+	// 		"https://images.unsplash.com/photo-1414016642750-7fdd78dc33d9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1498&q=80",
+	// 		"https://images.unsplash.com/photo-1533292674333-4c65b0926997?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
+	// 		"https://images.unsplash.com/photo-1526491109672-74740652b963?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60",
+	// 		"https://images.unsplash.com/photo-1475710534222-6165a8b45449?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
+	// 		"https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80",
+	// 		"https://images.unsplash.com/photo-1508873696983-2dfd5898f08b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
+	// 		"https://images.unsplash.com/photo-1502218808493-e5fd26249efc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80",
+	// 		"https://images.unsplash.com/photo-1445308394109-4ec2920981b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=753&q=80",
+	// 		];
+	// 		var i=0;
+	// 	setInterval(function(){
+	// 	  image[0].style.background="url('" + images[i] + "')";
+	// 	  image[0].style.backgroundSize = "cover";
+	// 	  image[0].style.backgroundPosition = "center";
+		  
+	// 	  i++;
+	// 	  if(i >=8){
+	// 	  	i = 0;
+	// 	  }
+	// 	  //console.log(i)
+	// 	}, 7000);
+
+	 </script>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	<div class="container">
+		<a class="navbar-brand" href="/">YelpCamp</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    <ul class="navbar-nav ml-auto">
+	    	<% if(!currentUser){ %>
+	    	<li class="nav-item active">
+		        <a class="nav-link" href="/login">Login <span class="sr-only">(current)</span></a>
+		     </li>
+		     <li class="nav-item active">
+		        <a class="nav-link" href="/register">Sign Up <span class="sr-only">(current)</span></a>
+		     </li>
+	    	<% }else{ %>
+		     <li class="nav-item active">
+		        <a class="nav-link">Sign In As <%=currentUser.username%> <span class="sr-only">(current)</span></a>
+		     </li>
+		     <li class="nav-item active">
+		        <a class="nav-link" href="/logout">Logout <span class="sr-only">(current)</span></a>
+		     </li>
+		     <% } %>
+ 	    </ul>
+	    	
+	  </div>
+		
+	</div>
+	  
+	</nav>
+

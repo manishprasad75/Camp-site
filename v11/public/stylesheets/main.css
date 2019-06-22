@@ -1,0 +1,54 @@
+nav {
+    margin-bottom: 1rem;
+}
+
+.img-thumbnail img {
+    width: 100%;
+}
+
+.img-thumbnail {
+    padding: 0;
+    margin-bottom: 1rem;
+    box-shadow: 0px 3px 5px rgba(0,0,0,0.1);
+}
+
+.img-thumbnail .caption-full {
+    padding: 12px;
+    
+}
+
+.card {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+#delete-form {
+    display: inline;
+}
+
+.background {
+    width: 100vw;
+    height: 100vh;
+    background: url(https://images.unsplash.com/photo-1414016642750-7fdd78dc33d9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1498&q=80);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left:0;
+    transition: all 3s;
+}
+
+.containe{
+    color: #fff;
+    position: absolute;
+    /*background: red;*/
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.containe h1{
+    letter-spacing: .2rem;
+    margin: 1rem;
+}
